@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+html,body{margin:0;background:#eef1f4;font-family:Arial,Helvetica,sans-serif}
+body{display:flex;justify-content:center;padding:24px 12px 48px}
+.building{position:relative;width:min(100%,900px);line-height:0;box-shadow:0 18px 55px rgba(0,0,0,.18);overflow:hidden}
+.building>img{display:block;width:100%;height:auto}
+.service{position:absolute;transform:translateX(-50%);width:32%;padding:9px 12px;border:0;border-radius:10px;background:rgba(20,28,38,.94);color:white;font-size:clamp(11px,1.55vw,16px);font-weight:700;line-height:1.2;text-align:center;cursor:pointer;box-shadow:0 5px 14px rgba(0,0,0,.24);transition:.18s}
+.service:hover{transform:translateX(-50%) translateY(-3px);background:#b67a32}
+.s1{left:30%;top:39.4%}.s2{left:70%;top:39.4%}
+.s3{left:30%;top:58.2%}.s4{left:70%;top:58.2%}
+.s5{left:30%;top:77%}.s6{left:70%;top:77%}
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.58);z-index:5}
+.modal.open{display:flex}.card{position:relative;width:min(520px,100%);padding:32px;border-radius:18px;background:white;line-height:1.5;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.card h2{margin:0 35px 10px 0}.card p{margin:0;color:#59616a}
+.close{position:absolute;top:8px;right:14px;border:0;background:none;font-size:32px;cursor:pointer}
+@media(max-width:600px){body{padding:0 0 20px}.building{width:100%;box-shadow:none}.service{width:37%;padding:6px 7px;border-radius:7px;font-size:10px}.s1,.s2{top:39%}.s3,.s4{top:57.9%}.s5,.s6{top:76.7%}}
